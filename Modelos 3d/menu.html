@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <script src="https://aframe.io/releases/1.3.0/aframe.min.js"></script>
+</head>
+<body>
+    <a-scene>
+        <a-assets>
+            <a-asset-item id="prueba" src="prueba02.gltf"></a-asset-item>
+        </a-assets>
+        <a-gltf-model src="#prueba"></a-gltf-model>
+        <a-entity id="rig" position="0 10 40">
+            <a-entity id="camera" camera look-controls></a-entity>
+        </a-entity>
+</a-scene>
+</body>
+</html>
