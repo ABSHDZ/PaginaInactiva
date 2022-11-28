@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diagrama 3d 1</title>
+    <script src="https://aframe.io/releases/1.3.0/aframe.min.js"></script>
+    <script src="https://unpkg.com/aframe-orbit-controls@1.2.0/dist/aframe-orbit-controls.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/donmccurdy/aframe-extras@v6.1.1/dist/aframe-extras.min.js"></script>
+</head>
+<body>
+    <a-scene>
+        <a-assets>
+            <a-asset-item id="D1" src="Diagrama 1 rojo v2.glb"></a-asset-item>
+        </a-assets>
+        <a-entity id="rig" position="0 0 0">
+            <a-entity id="camera" camera look-controls orbit-controls="target: 0 0 0; minDistance: 4; maxDistance: 4; initialPosition: 0 0 45"></a-entity>
+        </a-entity>
+        <a-entity gltf-model="#D1" animation-mixer rotation="90 0 0" position="0 0 0" scale="2 2 2"></a-entity>
+    </a-scene>
+</body>
+</html>

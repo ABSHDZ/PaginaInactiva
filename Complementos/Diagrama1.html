@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diagrama 1</title>
+    <link rel="stylesheet" href="Diagrama1css.css">
+</head>
+<body>
+    <div class="contenedor">
+        <div class="panel01">
+            <h1>Diagrama 1</h1>
+        </div>
+        <div class="panel02">
+            <iframe src="Modelos 3D/Diagrama 1/D1.html" frameborder="0" class="m3d"></iframe>
+        </div>
+        <div class="panel03">
+            <table class="table">
+                <tr><th>Voltajes</th><th>Valores</th><th>Unidades</th></tr>
+                <tr><th>V</th><td><input id="V1" type="number"></td><td>Volts</td></tr>
+            </table>
+            <table class="table">
+                <tr><th>Resistencias</th><th>Valores</th><th>Unidades</th></tr>
+                <tr><th>R1</th><td><input id="R1" type="number"></td><td>Ohms</td></tr>
+                <tr><th>R2</th><td><input id="R2" type="number"></td><td>Ohms</td></tr>
+                <tr><th>R3</th><td><input id="R3" type="number"></td><td>Ohms</td></tr>
+                <tr><th>R4</th><td><input id="R4" type="number"></td><td>Ohms</td></tr>
+                <tr><th>R5</th><td><input id="R5" type="number"></td><td>Ohms</td></tr>
+            </table>
+            <table class="table">
+                <tr><th colspan="4">Matriz</th></tr>
+                <tr><td><h4 id="textA">0</h4></td><td><h4 id="textB">0</h4></td><td>=</td><td><h4 id="textC">0</h4></td></tr>
+                <tr><td><h4 id="textD">0</h4></td><td><h4 id="textE">0</h4></td><td>=</td><td><h4 id="textO">0</h4></td></tr>
+            </table>
+            <table class="table">
+                <tr><th>Nodos</th><th>Resultados</th><th>Unidades</th></tr>
+                <tr><th>N2</th><td><h4 id="ResultadoN2">0</h4></td><td>Volts</td></tr>
+                <tr><th>N3</th><td><h4 id="ResultadoN3">0</h4></td><td>Volts</td></tr>
+            </table>
+            <table class="table">
+                <tr><th>Corrientes</th><th>Resultados</th><th>Unidades</th></tr>
+                <tr><th>ia</th><td><h4 id="corr_ia">0</h4></td><td>Amperes</td></tr>
+                <tr><th>ib</th><td><h4 id="corr_ib">0</h4></td><td>Amperes</td></tr>
+                <tr><th>ic</th><td><h4 id="corr_ic">0</h4></td><td>Amperes</td></tr>
+                <tr><th>id</th><td><h4 id="corr_id">0</h4></td><td>Amperes</td></tr>
+                <tr><th>ie</th><td><h4 id="corr_ie">0</h4></td><td>Amperes</td></tr>
+            </table>
+        </div>
+        <div class="panel04">
+            <a class="btn" id="btn01">Resolver</a>
+            <a class="btn" id="btn02">Ver en tablero</a>
+        </div>
+    </div>
+    <script src="Diagrama1js.js"></script>
+</body>
+</html>
