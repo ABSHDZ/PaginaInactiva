@@ -17,7 +17,9 @@
         <a-marker type="pattern" preset="custom" url="Modelos 3D/pattern-Test01.patt">
             <a-entity gltf-model="#D1M" animation-mixer position="0 0 0" scale="0.5 0.5 0.5"></a-entity>
         </a-marker>
-        <a-entity camera="active: true" data-aframe-default-camera></a-entity>
+        <a-entity id="rig" position="0 0 0">
+            <a-entity id="camera" camera></a-entity>
+        </a-entity>
         <!-- Linea 01 -->
         <a-marker type="pattern" preset="custom" url="Marcadores/pattern-ABS_A.patt" id="m1" registerevents></a-marker>
         <a-marker type="pattern" preset="custom" url="Marcadores/pattern-ABS_01.patt" id="m2" registerevents></a-marker>
