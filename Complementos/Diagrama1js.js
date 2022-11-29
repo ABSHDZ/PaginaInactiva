@@ -21,7 +21,7 @@ var corrid = document.getElementById("corr_id");
 var corrie = document.getElementById("corr_ie");
 //Funciones
 function tablero(){
-    window.location.href = "Tablero1.html";
+    window.location.href = "Cubos1.html";
 }
 function resolver(){
     //Resistencias y voltages
