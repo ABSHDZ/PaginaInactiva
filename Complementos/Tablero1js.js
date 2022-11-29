@@ -25,7 +25,7 @@ AFRAME.registerComponent('newposition', {
 });
 // Linea 02 Marcador de m3 a m4 (ABS_02 a ABS_06)
 var markerVisible02 = { m3: false, m4: false };
-AFRAME.registerComponent('registerevents02', {
+AFRAME.registerComponent('registerevents', {
     init: function () {let marker = this.el;
         this.el.addEventListener('markerFound', function() {markerVisible02[ marker.id ] = true;});
         this.el.addEventListener('markerLost', function() {markerVisible02[ marker.id ] = false;});}
@@ -50,7 +50,7 @@ AFRAME.registerComponent('newposition02', {
 });
 // Linea 03 Marcador de m4 a m5 (ABS_06 a ABS_07)
 var markerVisible03 = { m4: false, m5: false };
-AFRAME.registerComponent('registerevents03', {
+AFRAME.registerComponent('registerevents', {
     init: function () {let marker = this.el;
         this.el.addEventListener('markerFound', function() {markerVisible03[ marker.id ] = true;});
         this.el.addEventListener('markerLost', function() {markerVisible03[ marker.id ] = false;});}
@@ -75,7 +75,7 @@ AFRAME.registerComponent('newposition03', {
 });
 // Linea 04 Marcador de m5 a m6 (ABS_07 a ABS_08)
 var markerVisible04 = { m5: false, m6: false };
-AFRAME.registerComponent('registerevents04', {
+AFRAME.registerComponent('registerevents', {
     init: function () {let marker = this.el;
         this.el.addEventListener('markerFound', function() {markerVisible04[ marker.id ] = true;});
         this.el.addEventListener('markerLost', function() {markerVisible04[ marker.id ] = false;});}
@@ -100,7 +100,7 @@ AFRAME.registerComponent('newposition04', {
 });
 // Linea 05 Marcador de m7 a m8 (ABS_12 a ABS_13)
 var markerVisible05 = { m7: false, m8: false };
-AFRAME.registerComponent('registerevents05', {
+AFRAME.registerComponent('registerevents', {
     init: function () {let marker = this.el;
         this.el.addEventListener('markerFound', function() {markerVisible05[ marker.id ] = true;});
         this.el.addEventListener('markerLost', function() {markerVisible05[ marker.id ] = false;});}
@@ -125,7 +125,7 @@ AFRAME.registerComponent('newposition05', {
 });
 // Linea 06 Marcador de m9 a m10 (ABS_14 a ABS_19)
 var markerVisible06 = { m9: false, m10: false };
-AFRAME.registerComponent('registerevents06', {
+AFRAME.registerComponent('registerevents', {
     init: function () {let marker = this.el;
         this.el.addEventListener('markerFound', function() {markerVisible06[ marker.id ] = true;});
         this.el.addEventListener('markerLost', function() {markerVisible06[ marker.id ] = false;});}
@@ -150,7 +150,7 @@ AFRAME.registerComponent('newposition06', {
 });
 // Linea 07 Marcador de m10 a m11 (ABS_19 a ABS_B)
 var markerVisible07 = { m10: false, m11: false };
-AFRAME.registerComponent('registerevents07', {
+AFRAME.registerComponent('registerevents', {
     init: function () {let marker = this.el;
         this.el.addEventListener('markerFound', function() {markerVisible07[ marker.id ] = true;});
         this.el.addEventListener('markerLost', function() {markerVisible07[ marker.id ] = false;});}
