@@ -2,6 +2,7 @@ document.getElementById("btn01").addEventListener("click", imagen01);
 document.getElementById("btn02").addEventListener("click", imagen02);
 document.getElementById("btn03").addEventListener("click", imagen03);
 document.getElementById("btn04").addEventListener("click", imagen04);
+document.getElementById("btn05").addEventListener("click", subPaginas02);
 var myImagen = document.getElementById("img");
 var li = "#";
 myImagen.addEventListener("click", subPaginas);
@@ -23,4 +24,7 @@ function imagen04(){
 }
 function subPaginas(){
     window.location.href = li;
+}
+function subPaginas02(){
+    window.location.href = "Complementos/Modelos 3D/Pruebas/Prueba04.html";
 }
